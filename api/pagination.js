@@ -6,7 +6,7 @@ const routeValidator = require('express-route-validator')
 const router = express.Router();
 
 
-router.post("/platform",routeValidator.validate({   body:{
+router.get("/platform",routeValidator.validate({   body:{
   'start': { isRequired: true },
   'limit': { isRequired: true }
 }
